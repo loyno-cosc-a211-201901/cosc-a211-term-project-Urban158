@@ -47,7 +47,6 @@ Hopefully this chapter will answer some of my questions on how to develop the pr
    I have not figured out how to keep each alphapbet visual on screen while the user atempts additional guesses.
    I am not sure if it mandatory to also show incorrectly guessed alphabets in a area away from the gallows as well*/
 
-
 // An illustration of where the gallows will be drawn will also be presented
 /* The rules will indicate that no alphabets will be repeated to spell each
     mystery word (I can keep on screen as a reminder to user)*/
