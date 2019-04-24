@@ -28,6 +28,7 @@ I am finally reading and going over the Prof Wolfe and Scott McDermontt's videos
 Hopefully this chapter will answer some of my questions on how to develop the program.
 */
 
+
 // Hangman Pseudocode
 // Newman Hangman main program
 // Get the player's namespace
