@@ -55,6 +55,7 @@ Hopefully this chapter will answer some of my questions on how to develop the pr
 // The user will have up to 13 incorrect guesses before the hangman and gallow are completely drawn to end the game
 // The user will either recieve a "Congratulations you won" or "Sorry, you lose" to end the game.
 // The user will as if he/she wants to exit the game, if not, the game will repeat.
+//
 
   return 0;
 }
