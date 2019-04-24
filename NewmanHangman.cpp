@@ -37,7 +37,7 @@ Hopefully this chapter will answer some of my questions on how to develop the pr
 /* The compter will then read a file with five words to be picked for use in the game. A random selector program
    will be used to choose the word*/
 // Potential Words include: Program, Argument, Function, and Computer.
-// The words will be entered into an array with each aplhabet/letter a subscript to the word array.
+// The words will be entered into an array with each aplhabet/letter an element/subscript to the word array.
 /* Once a word is randomly selected by the computer, the screen will ilustrate an empty _ for each
    letter of the word to be spelled with one hint below it. for example"
 
