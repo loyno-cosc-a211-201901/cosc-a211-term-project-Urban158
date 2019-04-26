@@ -32,27 +32,28 @@ Hopefully this chapter will answer some of my questions on how to develop the pr
 // Hangman Pseudocode
 // Newman Hangman main program
 // Get the player's namespace
+
 // Greet player and introduce game and rules
 // Ask player to hit enter to begin the game
-/* The compter will then read a file with five words to be picked for use in the game. A random selector program
-   will be used to choose the word*/
+/* The compter will randomly select one of five words to be spelled in the program.
+    The user will be notified no letters are repeated.
 // Potential Words include: Program, Argument, Function, and Computer.
 // The words will be entered into an array with each aplhabet/letter an element/subscript to the word array.
 /* Once a word is randomly selected by the computer, the screen will ilustrate an empty _ for each
    letter of the word to be spelled with one hint below it. for example"
 
-   _ _ _ _ _ _ _ _
+   C_ O_ M_ P_ U_T_ E_ R_
    hint: An electronic device for storing and processing data, typically in binary form,
    according to instructions given to it in a variable program
-   I have not figured out how to keep each alphapbet visual on screen while the user atempts additional guesses.
-   I am not sure if it mandatory to also show incorrectly guessed alphabets in a area away from the gallows as well*/
+   I will create a loop that will once a letter is correctly guessed,it will print/display again through a loop
+   once the second, third, fourth....,eight letter is guessed */
 
 // An illustration of where the gallows will be drawn will also be presented
 /* The rules will indicate that no alphabets will be repeated to spell each
     mystery word (I can keep on screen as a reminder to user)*/
 /*  A function is under development which will print "Good Guess" for each alhpabet guess correctly and will also "else"
    draw a portion of the gallows if guessed incorrectly with "Sorry wrong alphabet" printed with each wrong guess*/
-// The user will have up to 13 incorrect guesses before the hangman and gallow are completely drawn to end the game
+// The user will have up to 10 incorrect guesses before the hangman and gallow are completely drawn to end the game
 // The user will either recieve a "Congratulations you won" or "Sorry, you lose" to end the game.
 // The user will as if he/she wants to exit the game, if not, the game will repeat.
 //
