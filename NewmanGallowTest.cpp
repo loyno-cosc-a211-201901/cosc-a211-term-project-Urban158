@@ -19,7 +19,6 @@ cout << "No letter is repeated and one hint will be provided with each word." <<
 
 void gallowDisplayStep1 ();
 
-
 return 0;
 }
 
