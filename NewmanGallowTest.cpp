@@ -1,23 +1,23 @@
-
-
+//Program: Gallow Display
+//Purpose: This program breaks down the display of the Gallow with User into 10 Steps
+// Pedastal, Stud, Beam, Rope, Head, Torso, Left Arm, Right Arm, Left Leg, and Right Leg
+// Auther: Derris Newman
+// Date last modified:
 
 #include <iostream>
 using namespace std;
 
-void displayStep1 (char symbol);
+// unction Prototype
+void displayStep1 (char);
 
 int main ()
-
 {
-
-char symbol;
-symbol = '*';
 
 cout << "Hello and welcome to the game Hangman!" << endl;
 cout << "Please guess each letter of the hidden word." << endl;
-cout << "No letter is repeated and one hint will be provided with each word" << end;
+cout << "No letter is repeated and one hint will be provided with each word." << endl;
 
-void gallowDisplayStep1 (char symbol)
+void gallowDisplayStep1 ();
 
 
 return 0;
@@ -29,12 +29,12 @@ return 0;
 // First incorrect answer displays Gallow Pedastal                                                                   *
 // *******************************************************************************************************************
 
- void gallowDisplayStep1 (char symbol)
+void gallowDisplayStep1 (char)
 {
-symbol = "*";
-
+char '*';
 cout <<  "*" << "*" << "*" << "*" << "*" <<"*" << "*" << "*" <<"*" << "*" << "*" << "*" << "*" << "*" << "*" << endl;
-cout << "Sorry, wrong guess, please try again" << endl;
+cout << "Sorry, wrong guess, please try again!" << endl;
+return;
 }
 
 //********************************************************************************************************************
