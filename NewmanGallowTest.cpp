@@ -17,7 +17,7 @@ cout << "Hello and welcome to the game Hangman!" << endl;
 cout << "Please guess each letter of the hidden word." << endl;
 cout << "No letter is repeated and one hint will be provided with each word." << endl;
 
-gallowDisplayStep1 ();
+cout << gallowDisplayStep1 ();
 
 return 0;
 }

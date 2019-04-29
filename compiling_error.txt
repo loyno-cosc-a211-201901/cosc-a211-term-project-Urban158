@@ -1,0 +1,7 @@
+C:\Users\Derris\Documents\GitHub\cosc-a211-term-project-Urban158\NewmanGallowTest.cpp:13:1: error: expected constructor, destructor, or type conversion before 'int'
+ int main ()
+ ^~~
+C:\Users\Derris\Documents\GitHub\cosc-a211-term-project-Urban158\NewmanGallowTest.cpp: In function 'int gallowDisplayStep1()':
+C:\Users\Derris\Documents\GitHub\cosc-a211-term-project-Urban158\NewmanGallowTest.cpp:37:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
