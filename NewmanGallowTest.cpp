@@ -7,8 +7,8 @@
 #include <iostream>
 using namespace std;
 
-// unction Prototype
-void displayStep1 (char);
+// Function Prototype
+gallowDisplayStep1 ()
 
 int main ()
 {
@@ -17,7 +17,7 @@ cout << "Hello and welcome to the game Hangman!" << endl;
 cout << "Please guess each letter of the hidden word." << endl;
 cout << "No letter is repeated and one hint will be provided with each word." << endl;
 
-void gallowDisplayStep1 ();
+gallowDisplayStep1 ();
 
 return 0;
 }
@@ -28,12 +28,12 @@ return 0;
 // First incorrect answer displays Gallow Pedastal                                                                   *
 // *******************************************************************************************************************
 
-void gallowDisplayStep1 (char)
+gallowDisplayStep1 ()
 {
-char '*';
+
 cout <<  "*" << "*" << "*" << "*" << "*" <<"*" << "*" << "*" <<"*" << "*" << "*" << "*" << "*" << "*" << "*" << endl;
 cout << "Sorry, wrong guess, please try again!" << endl;
-return;
+
 }
 
 //********************************************************************************************************************

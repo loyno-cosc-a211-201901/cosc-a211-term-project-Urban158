@@ -1,4 +1,0 @@
-C:\Users\Derris\Documents\GitHub\cosc-a211-term-project-Urban158\NewmanGallowTest.cpp: In function 'void gallowDisplayStep1(char)':
-C:\Users\Derris\Documents\GitHub\cosc-a211-term-project-Urban158\NewmanGallowTest.cpp:33:6: error: expected unqualified-id before '*'
- char '*';
-      ^~~
