@@ -1,11 +1,11 @@
 /*Program Name: Hangman
-Purpose: I am hoping to write a c++ program to imitate the classic game called Hangman.
-I have been advised that the user will have several different words which may be used for
-the game.  I assumme I will eventually learn to draw using c++ and develop a funtion that will
-draw a stick figure gallow with a stick figure person attached to. The user is expected to
-spell the word before the number of guess attempts draw the full stick figure gallow and person.
+Purpose: I am writing a c++ program to imitate the classic game called Hangman.
+The user will have twenty six different words which may be used for
+the game. The user is expected to spell the word before nine incorrect guess attempts
+will draw the full gallow and user.
+
 Author: Derris Newman
-Date Last Modified: April 14, 2019 */
+Date Last Modified: June 19, 2019 */
 
 #include <iostream>
 using namespace std;
@@ -13,7 +13,7 @@ using namespace std;
 int main()
 {
 /* Initial Description
-Given the user is expected to spell a word before enough wrong guesses draws a stick figure and gallows,
+Given the user is expected to spell a word before enough wrong guesses draws a  figure and gallows,
 I am not sure how the word to be spelled will be presented to the user.  Should the user open another file
 containing a list of words of which one will be randomly chosen.
 
