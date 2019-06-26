@@ -5,8 +5,13 @@ The user will have twenty six different words which may be used for
 the game. The user is expected to spell the word before nine incorrect guess attempts
 will draw the full gallow and user.
 
+1. The game selects a random word for the player to guess.
+2. The player guesses one letter at a time until either the word is completed,
+   or the number of missed guesses reach nine.
+
 Author: Derris Newman
-Date Last Modified: June 19, 2019 */
+Date Last Modified: June 26, 2019 */
+
 #include <fstream>
 #include <iostream>
 #include <iomanip>
@@ -18,15 +23,15 @@ void guessWord(string word);
 
 int main()
 {
-srand(time(NULL));
-const int SIZE = 26;
+srand(time(0));                                               // Random gnerated selected word from list "HangmanWords.txt"
+const int SIZE = 26;                                          // Number of words in the text file for use
 string word;
 char ch;
-ifstream dataln;
+ifstream inputFile;
 
-dataln.open("HangmanWords.txt");
+inputFile.open("HangmanWords.txt");                           // Guessing word game function
 
-if (dataln.fail())
+if (inputFile.fail())                                         // Testing file
 {
   cout << "File not found";
   return 1;
@@ -36,13 +41,13 @@ else
   string words[SIZE];
   for (int i = 0; i < SIZE; i++)
   {
-    dataln >> word;
+    inputFile >> word;
     words[i] = word;
   }
-  dataln.close();
+  inputFile.close();
   while (true)
   {
-    int n = rand() % (26) + 1;
+    int n = rand() % (25) + 1;
     guessWord(words[n]);
     cout << "\nDo you want to continue the game (Y/N): ";
     cin >> ch;
@@ -63,19 +68,19 @@ return 0;
 //*****************************************************************************
 void guessWord(string word)
 {
-  const int MAXCHANCES = 9;
+  const int MAXCHANCES = 9;                                        // The gallow has nine scenes before completely built
   char ch;
   int miss = 0, flag;
   int len = word.length();
   char arr[len];
   for (int i = 0; i < len; i++)
   {
-    arr[i] = '*';
+    arr[i] = '*';                                                  // '*' for each letter if word to be guessed
   }
   while (len != 0)
   {
     flag = 0;
-    cout << "(Guess) Enter a letter in word ";
+    cout << "(Guess) Enter a letter in the word: ";
     for (int i = 0; i < word.length(); i++)
     {
       cout << arr[i];
@@ -98,7 +103,7 @@ void guessWord(string word)
     }
     if (flag == 0)
     {
-      miss++;
+      miss++;                                                            // The gallow image would be connected to the miss variable
       cout << ch << " is not in the word." << endl;
       cout << "You have " << MAXCHANCES - miss << " left." << endl;
       if (MAXCHANCES == miss)
