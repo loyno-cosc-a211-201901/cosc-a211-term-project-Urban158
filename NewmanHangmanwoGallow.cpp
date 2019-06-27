@@ -87,7 +87,7 @@ void guessWord(string word)
     }
     cout << ">";
     cin >> ch;
-    for (int i = 0; word.length(); i++)
+    for (int i = 0; i < word.length(); i++)
     {
       if (word.at(i) == ch && arr[i] == '*')
       {
