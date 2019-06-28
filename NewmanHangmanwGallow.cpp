@@ -110,14 +110,13 @@ void guessWord(string word)
     {
       miss++;                                                            // The gallow image would be connected to the miss variable
       cout << ch << " is not in the word." << endl;
-      cout << "You have " << MAXCHANCES - miss << " left." << endl;
+      cout << "You have " << MAXCHANCES - miss << "  guesses left." << endl;
       if (MAXCHANCES == miss)
       {
         cout << "You lost the game. The word is: " << word << endl;
         break;
       }
     }
-
 
   if (MAXCHANCES == miss)                                                       // Scene 10 is the full display
   {
@@ -157,7 +156,7 @@ void guessWord(string word)
     cout << "      *        " << "*" << endl;
     cout << "        *      " << "*" << endl;
     cout <<  "*" << "*" << "*" << "*" << "*" <<"*" << "*" << "*" <<"*" << "*" << "*" << "*" << "*" << "*" << "*" << "*" << endl;
-    cout <<"Sorry, wrong guess #9, please try again" << endl;
+
   }
   else if ((MAXCHANCES - miss) == 2)
   {
@@ -176,7 +175,7 @@ void guessWord(string word)
     cout << "               " << "*" << endl;
     cout << "               " << "*" << endl;
     cout <<  "*" << "*" << "*" << "*" << "*" <<"*" << "*" << "*" <<"*" << "*" << "*" << "*" << "*" << "*" << "*" << "*" << endl;
-    cout <<"Sorry, wrong guess #8, please try again" << endl;
+
   }
   else if ((MAXCHANCES- miss) == 3)
   {
@@ -196,7 +195,7 @@ void guessWord(string word)
     cout << "               " << "*" << endl;
     cout << "               " << "*" << endl;
     cout <<  "*" << "*" << "*" << "*" << "*" <<"*" << "*" << "*" <<"*" << "*" << "*" << "*" << "*" << "*" << "*" << "*" << endl;
-    cout <<"Sorry, wrong guess #7, please try again" << endl;
+
   }
   else if ((MAXCHANCES - miss) == 4)
   {
@@ -216,7 +215,7 @@ void guessWord(string word)
     cout << "               " << "*" << endl;
     cout << "               " << "*" << endl;
     cout <<  "*" << "*" << "*" << "*" << "*" <<"*" << "*" << "*" <<"*" << "*" << "*" << "*" << "*" << "*" << "*" << "*" << endl;
-    cout <<"Sorry, wrong guess #6, please try again" << endl;
+
   }
   else if ((MAXCHANCES - miss) == 5)
   {
@@ -236,7 +235,7 @@ void guessWord(string word)
     cout << "               " << "*" << endl;
     cout << "               " << "*" << endl;
     cout <<  "*" << "*" << "*" << "*" << "*" <<"*" << "*" << "*" <<"*" << "*" << "*" << "*" << "*" << "*" << "*" << "*" << endl;
-    cout <<"Sorry, wrong guess #5, please try again" << endl;
+
   }
   else if ((MAXCHANCES - miss) == 6)
   {
@@ -256,7 +255,7 @@ void guessWord(string word)
     cout << "               " << "*" << endl;
     cout << "               " << "*" << endl;
     cout <<  "*" << "*" << "*" << "*" << "*" <<"*" << "*" << "*" <<"*" << "*" << "*" << "*" << "*" << "*" << "*" << "*" << endl;
-    cout <<"Sorry, wrong guess #4, please try again" << endl;
+
   }
   else if ((MAXCHANCES - miss) == 7)
   {
@@ -276,7 +275,7 @@ void guessWord(string word)
     cout << "               " << "*" << endl;
     cout << "               " << "*" << endl;
     cout <<  "*" << "*" << "*" << "*" << "*" <<"*" << "*" << "*" <<"*" << "*" << "*" << "*" << "*" << "*" << "*" << "*" << endl;
-    cout <<"Sorry, wrong guess #3, please try again" << endl;
+
   }
   else if ((MAXCHANCES - miss) == 8)
   {
@@ -295,13 +294,13 @@ void guessWord(string word)
     cout << "       " << "*" << endl;
     cout << "       " << "*" << endl;
     cout <<  "*" << "*" << "*" << "*" << "*" <<"*" << "*" << "*" <<"*" << "*" << "*" << "*" << "*" << "*" << "*" << endl;
-    cout <<"Sorry, wrong guess #2, please try again" << endl;
+
   }
   else if ((MAXCHANCES - miss) == 9)
   {
     //symbol = "*";
     cout <<  "*" << "*" << "*" << "*" << "*" <<"*" << "*" << "*" <<"*" << "*" << "*" << "*" << "*" << "*" << "*" << endl;
-    cout << "Sorry, wrong guess, please try again!" << endl;
+
   }
   if (len == 0)
   {
