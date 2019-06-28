@@ -18,7 +18,6 @@ Date Last Modified: June 26, 2019 */
 #include <cstdlib>
 #include <ctime>
 using namespace std;
-
 void guessWord(string word);
 
 int main()
@@ -27,6 +26,9 @@ srand(time(0));                                               // Random gnerated
 const int SIZE = 26;                                          // Number of words in the text file for use
 string word;
 char ch;
+
+
+
 ifstream inputFile;
 
 inputFile.open("HangmanWords.txt");                           // Guessing word game function
@@ -73,6 +75,9 @@ void guessWord(string word)
   int miss = 0, flag;
   int len = word.length();
   char arr[len];
+  cout << "Welcome to the game Hangman!" << endl;
+  cout << "Please guess the mystery word. If you guess the wrong letter more than 10 times, you loose the game!" << endl;
+
   for (int i = 0; i < len; i++)
   {
     arr[i] = '*';                                                  // '*' for each letter if word to be guessed
